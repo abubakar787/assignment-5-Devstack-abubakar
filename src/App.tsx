@@ -7,13 +7,10 @@ import TechnologyList from "./components/TechnologyList";
 import Footer from "./components/Footer";
 
 function App() {
-  // All technologies from JSON
   const [technologies, setTechnologies] = useState<Technology[]>([]);
-
-  // Technologies selected by user
   const [stack, setStack] = useState<Technology[]>([]);
 
-  // Load technologies from JSON
+  // Load JSON
   useEffect(() => {
     fetch("/technologies.json")
       .then((response) => response.json())
@@ -33,7 +30,7 @@ function App() {
     ]);
   };
 
-  // Remove one technology
+  // Remove one
   const removeFromStack = (id: string) => {
     setStack((currentStack) =>
       currentStack.filter(
@@ -42,7 +39,7 @@ function App() {
     );
   };
 
-  // Remove all technologies
+  // Remove all
   const removeAll = () => {
     setStack([]);
   };
@@ -62,6 +59,7 @@ function App() {
           onRemoveAll={removeAll}
         />
       </main>
+
       <Footer />
     </>
   );
