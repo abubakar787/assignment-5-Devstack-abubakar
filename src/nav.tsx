@@ -3,7 +3,7 @@ const Nav = () => {
     <div className="navbar sticky top-0 z-50 bg-white border-b border-gray-100 px-5 lg:px-10">
       <div className="navbar-start">
         
-        {/* Mobile Menu */}
+       
         <div className="dropdown lg:hidden">
           <div
             tabIndex={0}
@@ -89,7 +89,7 @@ const Nav = () => {
         </ul>
       </div>
 
-      {/* Right Side */}
+    /* Right Side */
       <div className="navbar-end gap-2">
         <button className="btn btn-ghost btn-sm font-normal">
           Sign In
