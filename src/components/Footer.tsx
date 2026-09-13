@@ -119,8 +119,7 @@ const Footer = () => {
             </div>
 
           </div>
-
-          {/* Legal */}
+    
           <div>
 
             <h4 className="text-[9px] font-bold uppercase tracking-wider text-slate-900">
